@@ -1,0 +1,1 @@
+{"name":"chinanda-timbers","private":true,"type":"module","scripts":{"dev":"node server.mjs","build":"node build.mjs"}}

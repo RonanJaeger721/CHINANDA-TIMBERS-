@@ -1,0 +1,4 @@
+import fs from 'node:fs';
+fs.rmSync('dist',{recursive:true,force:true});fs.cpSync('public','dist',{recursive:true});
+const routes={'products':'Products','timber':'Timber','roofing':'Roofing Materials','delivery':'Nationwide Delivery','about':'About','contact':'Contact & Get a Quote','product/saligna-hardwood':'Saligna Hardwood','product/pine-timber':'Pine Timber','product/round-poles':'Round Poles','product/roofing-sheets':'Roofing Sheets','product/building-accessories':'Building Accessories','product/related-roofing-materials':'Related Roofing Materials'};
+const template=fs.readFileSync('public/index.html','utf8');for(const [route,title] of Object.entries(routes)){fs.mkdirSync('dist/'+route,{recursive:true});fs.writeFileSync('dist/'+route+'/index.html',template.replace(/<title>.*?<\/title>/,`<title>${title} | Chinanda Timbers</title>`))}fs.writeFileSync('dist/404.html',template);console.log('Built 13 routes with all assets and route titles.');
