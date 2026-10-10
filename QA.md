@@ -10,4 +10,6 @@
 - Build and JavaScript syntax checks pass.
 - Supplied phone, address, material applications and nationwide delivery wording retained. No fabricated pricing, specifications, history or testimonials added.
 
-Limitations: no public deployment; no form backend or enquiry storage. External map, fonts, telephone and WhatsApp services depend on the visitor's connectivity and installed apps. Calls and messages were not placed during QA. Reference websites could not be fetched reliably during research.
+Limitations: no form backend or enquiry storage. External map, fonts, telephone and WhatsApp services depend on the visitor's connectivity and installed apps. Calls and messages were not placed during QA. Reference websites could not be fetched reliably during research.
+
+Production deployed to https://chinanda-timbers.vercel.app on 10 October 2026. GitHub main is connected to the Vercel project.
